@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Votos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vote já! O Futuro em suas mãos.</h1>
+    </header>
+    <section>
+        <div> Digite o número de seu candidato:
+            <input type="number" id="txtnum" min="0" max="3">
+            <input  type="button" id="adicionar" value="Votar!" onclick="adicionar()">
+            <br><br>
+        <div id="candidatos">
+            <div>
+                <img id="img1" src="img/peroba.png" alt="Ana Peróba" width="100px">
+                <p>[1] Ana Peróba</p>
+            </div>
+            <div>
+                <img id="img2" src="img/cabecao.png" alt="Pedro Cabeção" width="100px">
+                <p>[2] Pedro Cabeção</p>
+            </div>
+            <div>
+                <img id="img3" src="img/sargento.png" alt="Sargento Pimentel" width="100px">
+                <p>[3] Sargento Pimentel</p>
+            </div>
+        </div>
+        <div>
+            <select id="lista" size="10"></select>
+            <br><br>
+            <input type="button" id="verificar" value="Finalizar" onclick="verificar()">
+            <input type="button" id="limpar"    value="Limpar"  onclick="limpar()">
+        </div>
+        <div id="res"> Vote consciente, seu voto é muito importante!</div>
+        <div id="vencedor" style="margin-top: 20px;"></div>
+
+    </section>
+    <footer>
+        <p>by Everton Bueno</p>
+    </footer>   
+    <script src="script.js"></script>
+</body>
+</html>
