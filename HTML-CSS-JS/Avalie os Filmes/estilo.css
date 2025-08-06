@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(136, 135, 141);
+    font:normal 15pt Arial;
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto    ;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.281);
+}
+
+#nota {
+    width: 50px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#resultado {
+    padding: 10px 20px;
+    font-size: 16px;
+
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+
