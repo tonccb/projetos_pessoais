@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
+    <main>
+        <header>
         <h1>Calcule seu IMC</h1>
-    </header>
-    <section>
+        </header>
+        <section>
         <div>
-            <p>Informe seu Peso atual (KG):
-                <input type="number" id="txtpeso" min="0">
+            <p>Informe seu Peso (KG):
+                <input type="number" id="txtpeso" min="40" max="300" placeholder="Ex: 70">
             </p>
-            <p>Informe sua altura (m):
-                <input type="number" id="txtaltura" step="0.01" placeholder="Ex: 1.75" min="0">
+            <p>Informe sua Altura (m):
+                <input type="number" id="txtaltura" step="0.01" placeholder="Ex: 1.75" min="1.20" max="2.50">
             </p>
             <div class="conteiner">
             <p>
                 <input type="button" name="button" class="button" value="calcular" onclick="calcular()">
+                <input type="button" name="button" class="button" value="limpar" onclick="limpar()">
             </p>
             </div>
         </div>
         <div id="res"> Preencha os dados acima para obter seu IMC! </div>
-
-    </section>
+        <div id="barra-conteiner">
+            <div id="barra"></div>
+        </div> 
+        </section>
+    </main>
     <footer>
         <p>by Everton Bueno</p>
     </footer>   
