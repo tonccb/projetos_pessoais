@@ -1,14 +1,22 @@
 body {
-    background-color: rgb(201, 201, 202);
+    background-color: rgb(129, 127, 127);
     font:normal 15pt Arial;
     
 }
 
-header {
-    color: rgb(255, 255, 255);
-    text-align: center;
+
+main {
+    max-width: 500px;
+    margin: auto;
+    padding: 0 15px;
 }
 
+header {
+    color: rgb(255, 255, 255);
+    border-left: 5px solid white;
+    margin: auto;
+    padding-left: 8px;
+}
 section {
     background-color: white;
     border-radius: 10px;
@@ -23,20 +31,24 @@ section {
 
 .conteiner {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 1rem;;
+    align-items: center;
 }
 
 .btn {
-    background-color: rgb(13, 12, 12);
+    background-color: rgb(97, 96, 96);
     color: white;
     border-radius: 10px;
     padding: 5px;
     width: 100px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(170, 170, 170);
+    color: rgb(5, 5, 5);
+    transition: 0.3s;
 }
 
 footer {

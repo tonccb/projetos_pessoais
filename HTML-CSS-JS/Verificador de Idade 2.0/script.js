@@ -4,8 +4,7 @@ function verificar() {
     var formano = document.getElementById('txtano')
     var res = document.getElementById('res')
     if (formano.value.length == 0 || formano.value > ano){
-        window.alert('[ERRO] Verifique os dados novamente')
-        } else{
+        window.alert('[ERRO] Verifique os dados novamente'); return;} 
             var fsex = document.getElementsByName('radsex')
             var idade = ano - Number(formano.value)
             var genero = ''
@@ -17,7 +16,6 @@ function verificar() {
                     img.setAttribute('src', 'img/menino.png')
                     document.body.style.background='#a18e71'
                     genero = 'um Menino'
-
                 } else if (idade < 21){
                     img.setAttribute('src', 'img/jovemh.png')
                     document.body.style.background='#cca071'
@@ -29,10 +27,9 @@ function verificar() {
                 } else {
                     img.setAttribute('src', 'img/idoso.png')
                     document.body.style.background='#1d1104'
-                }
-
-
-            } else if (fsex [1].checked) {
+                }}
+                
+            else if (fsex [1].checked) {
                 genero = 'uma Mulher'
                 if (idade >=0 && idade < 12){
                     img.setAttribute('src', 'img/menina.png')
@@ -51,12 +48,13 @@ function verificar() {
                     img.setAttribute('src', 'img/idosa.png')
                     document.body.style.background='#7a0c00'
                 }
-            }
-        }
+                }
+        
             res.style.textAlign = 'center'
-            res.innerHTML = `Detectamos ${genero} de ${idade} anos.`
+            res.innerHTML = `Detectamos ${genero} de ${idade} anos.<br></br>`
             res.appendChild(img)
-        }
+    }
+    
 function limpar(){
     var res = document.getElementById('res')
     var formano = document.getElementById('txtano')
@@ -64,4 +62,4 @@ function limpar(){
     formano.value = ''
     formano.focus()
     document.body.style.background='#e3e3e3'
-}
+    }
