@@ -1,7 +1,6 @@
 body {
     background-color: rgb(129, 127, 127);
     font:normal 15pt Arial;
-    
 }
 
 
@@ -17,6 +16,7 @@ header {
     margin: auto;
     padding-left: 8px;
 }
+
 section {
     background-color: white;
     border-radius: 10px;
