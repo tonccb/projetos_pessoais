@@ -1,0 +1,388 @@
+/*Estilos Gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+
+/* Navbar */
+
+.navbar-container {
+    width: 100%;
+    height: 85px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar-items {
+    position: absolute;
+    right:0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #ccc;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #ff6a00;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #db5c01;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Main Banner*/
+.main-banner {
+    background-image: url("../img/mainbanner.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;    
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p {
+    font-size: 32px;
+}
+
+/* Services*/
+
+.services-container {
+    padding: 5rem 0;
+}
+
+.services-container ul {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin:0 auto;
+}
+
+.services-container li {
+    flex: 1 1 200px;  /*GROW, Shrink, Base Size*/
+    text-align:center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-rocket {
+    color: #ff6a00;
+}
+
+.fa-shield-alt {
+    color: #2cc76a
+}
+
+.fa-comments {
+    color: #00a2ff;
+}
+
+.services-container h3 {
+    margin-bottom: 25px;
+}
+
+.services-container p {
+    line-height: 24px;
+}
+
+.pricing-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 36px;
+}
+
+.princing-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    width: 50px auto 0;
+}
+
+.plan {
+    flex: 1; /* significa que todos os elementos filhos terao o mesmo tamanho */
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color:#333
+}
+
+.plan .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 120px;
+    background-color: #2cc76a;
+    color: #fff;
+    text-align: center;
+    line-height: 120px; /*Alinha o texto verticalmente*/
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding: 50px 0;
+}
+
+.plan .plan-btn {
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .recommended {
+    background-color: #ff6a00;
+}
+
+.searchdomain-container {
+    background-color: #e8e9ea;
+    text-align: center;
+    height: 200px;
+}
+
+.searchdomain-container h2 {
+    padding: 10px;
+    font-size: 36px;
+}
+
+.searchdomain-container p {
+    font-size: 20px;
+    padding: 5px 0 0 0;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container input[type="text"] {
+    font-size: 15px;
+    width: 40%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+} 
+
+.searchdomain-container input[type="submit"] {
+    font-size: 15px;
+    height: 40px;
+    padding: 0 20px;
+    margin-left: -8px;
+    border: none;
+    background-color: #ff6a00;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.searchdomain-container input[type="submit"]:hover {
+    background-color: #db5c01;
+    color: #ffffff;
+}
+
+.contact-container {
+    padding: 5rem 0 2rem 0;
+    text-align: center;
+}
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    margin:0 10px 20px 0;
+}
+
+.contact-container textarea {
+    display: block; /* Faz o textarea ocupar uma linha inteira */
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;   
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #ff6a00;
+    color: #fff;
+    cursor: pointer;
+
+}
+.contact-container input[type="submit"]:hover {
+    background-color: #db5c01;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto 50px 0;
+}
+
+/*Responsive*/
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-banner p{
+        padding: 0 6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html,
+    body {
+        overflow-x:hidden; /*Tudo o que ultrapassar a largura da tela, sera escondido*/
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+        padding: 2px;
+    }
+    .services-container li {
+        padding: 10px;
+    }
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .main-banner h1 {
+        font-size: 36px;
+        padding: 0 2rem;
+    }
+
+    .main-banner p {
+        font-size: 20px;
+        padding: 1rem 2rem;
+    }
+
+    .searchdomain-container h2 {
+        font-size: 32px;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+        margin:auto;
+    }
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin:10px 0;
+    }
+
+    .searchdomain-container input[type="text"] {
+        width: 70%;
+    }
+    .contact-container {
+        padding: 3rem 2rem;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
