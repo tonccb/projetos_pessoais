@@ -1,164 +1,3 @@
-<<<<<<< HEAD
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica;
-    color: #666665;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url("../IMG/back.jpg");
-    background-position: center;
-    background-size:300%;
-}
-
-button {
-    background-color: white;
-    color: #102f5e;
-    border: 2px solid #102f5e;
-    padding: 0.3rem 0.6rem;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-}
-
-button:hover {
-    background-color: #102f5e;
-    color: white;
-}
-
-button:hover > i {
-    color: white;
-}
-
-button i {
-    color: #102f5e;
-    font-weight: bold;
-    pointer-events: none;    /*para evitar erro, pois o icone não iria disparar o evento, mas sim o botão.*/
-}
-
-input, select {
-    padding: 0.25rem 0.5rem ;
-}
-
-.hide{
-    display: none;
-}
-
-/*To DO Header*/
-
-.todo-container {
-    max-width: 450px;
-    margin: 3rem auto 0;
-    background-color: #fdfdfd;
-    padding: 1.5rem;
-    border-radius: 15px;
-}
-
-.todo-container header {
-    text-align: center; 
-    padding: 0 1rem 1rem;
-    border-bottom: 2px solid #ccc;
-}
-
-#todo-form ,
-#edit-form {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-}
-
-#todo-form p,
-#edit-form p{
-    margin-bottom: .5rem;
-    font-weight: bold;
-}
-
-.form-control{
-    display: flex;
-}
-
-.form-control input{
-    margin-right: .3rem;
-}
-
-#cancel-edit-btn {
-    margin-top: 1rem;;
-}
-
-/*Todo Toolbar*/
-
-#toolbar {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-}
-
-#toolbar h4{
-    margin-bottom: .5rem;
-}
-
-#search {
-    border-right: 1px solid #ccc;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-}
-
-#search form {
-    display: flex;
-}
-
-#search input {
-    width: 100%;
-    margin-right: 0.3rem;
-}
-
-#filter {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-}
-
-#filter select {
-    flex: 1;
-}
-
-/*Todo List*/
-
-.todo {
-    display: flex;
-    justify-content: space-around; /*Titulo de um lado e botões do outro*/
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-    transition: .3s;
-}
-
-.todo h3{
-    flex: 1;
-    font-size: 0.9rem;
-}
-
-.todo button{
-   margin-left: .4rem; 
-}
-
-.done {
-    background-color: #395169;
-}
-
-.done h3 {
-    color: #fff;
-    text-decoration: line-through; /*Sobrescrito*/
-    font-style: italic;
-}
-=======
 * {
     padding: 0;
     margin: 0;
@@ -169,8 +8,9 @@ input, select {
 
 body {
     background-image: url("../IMG/back.jpg");
+    /* os ".." faz com que torne uma pasta atrás na navegação */
     background-position: center;
-    background-size:300%;
+    background-size: cover;
 }
 
 button {
@@ -191,62 +31,73 @@ button:hover {
     color: white;
 }
 
-button:hover > i {
+button:hover>i {
     color: white;
 }
 
 button i {
     color: #102f5e;
     font-weight: bold;
-    pointer-events: none;    /*para evitar erro, pois o icone não iria disparar o evento, mas sim o botão.*/
+    pointer-events: none;
+    /*para evitar erro, pois o icone não iria disparar o evento, mas sim o botão.*/
 }
 
-input, select {
-    padding: 0.25rem 0.5rem ;
+input,
+select {
+    padding: 0.25rem 0.5rem;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  display: none;
+}
 /*To DO Header*/
 
 .todo-container {
     max-width: 450px;
     margin: 3rem auto 0;
     background-color: #fdfdfd;
+    opacity: .9;
+    /* Acrescenta transparencia ao fundo */
     padding: 1.5rem;
     border-radius: 15px;
 }
 
 .todo-container header {
-    text-align: center; 
+    text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 2px solid #ccc;
 }
 
-#todo-form ,
+#todo-form,
 #edit-form {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
 
 #todo-form p,
-#edit-form p{
+#edit-form p {
     margin-bottom: .5rem;
     font-weight: bold;
 }
 
-.form-control{
+.form-control {
     display: flex;
 }
 
-.form-control input{
+.form-control input {
     margin-right: .3rem;
 }
 
 #cancel-edit-btn {
-    margin-top: 1rem;;
+    margin-top: 1rem;
+    ;
 }
 
 /*Todo Toolbar*/
@@ -257,7 +108,7 @@ input, select {
     display: flex;
 }
 
-#toolbar h4{
+#toolbar h4 {
     margin-bottom: .5rem;
 }
 
@@ -293,20 +144,21 @@ input, select {
 
 .todo {
     display: flex;
-    justify-content: space-around; /*Titulo de um lado e botões do outro*/
+    justify-content: space-around;
+    /*Titulo de um lado e botões do outro*/
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
     transition: .3s;
 }
 
-.todo h3{
+.todo h3 {
     flex: 1;
     font-size: 0.9rem;
 }
 
-.todo button{
-   margin-left: .4rem; 
+.todo button {
+    margin-left: .4rem;
 }
 
 .done {
@@ -315,7 +167,7 @@ input, select {
 
 .done h3 {
     color: #fff;
-    text-decoration: line-through; /*Sobrescrito*/
+    text-decoration: line-through;
+    /*Sobrescrito*/
     font-style: italic;
 }
->>>>>>> 30f265c (Alteração Inicial)
