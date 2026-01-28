@@ -32,16 +32,30 @@ describe('To-do Test Cases', () => {
         cy.get("#edit-input").should('be.visible').clear().type("Estudar Cypress{enter}")
         cy.get(".todo").should('contain.text', 'Estudar Cypress')
     })
-
     it('CT 05 - Edição de uma tarefa com input vazio', () => {
+
         criarTarefa("Estudar Automação")
 
         cy.get(".edit-todo").click()
-        cy.get("#edit-input").should('be.visible').clear().type("   ")
-        cy.get("#save-btn").click()
 
-        cy.get("#edit-error").should('be.visible').and('contain.text', 'O título não pode estar vazio')
+        cy.get("#edit-form").should("be.visible")
+
+        cy.get("#edit-input")
+            .should("be.visible")
+            .clear()
+            .type("   ")
+
+        // 🔑 FORÇA o submit real do formulário
+        cy.get("#edit-form").submit()
+
+        cy.get("#edit-error")
+            .should("be.visible")
+            .and("contain.text", "O título não pode estar vazio")
+
+        // garante que o form não fechou
+        cy.get("#edit-form").should("be.visible")
     })
+
 
     it('CT 06 - Marcar uma tarefa como concluída', () => {
 
@@ -72,8 +86,13 @@ describe('To-do Test Cases', () => {
 
         criarTarefa("Estudar Automação")
 
-        cy.get("#search-input").type("Automação")
-        cy.get(".todo").should('contain.text', 'Estudar Automação')
+        cy.get("#search-input")
+        .should("be.visible")
+        .clear()
+        .type("Automação")
+
+        cy.contains(".todo", "Estudar Automação")
+        .should("be.visible")
     })
 
     it('CT 10 - Pesquisa (Limpeza do termo de busca)', () => {
