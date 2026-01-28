@@ -134,7 +134,7 @@ todoInput.addEventListener("focus", () => {
 });
 
 // Remove erro ao focar no input de edição
-editInput.addEventListener("focus", () => {
+editInput.addEventListener("input", () => {
     editError.style.display = "none";
 });
 
