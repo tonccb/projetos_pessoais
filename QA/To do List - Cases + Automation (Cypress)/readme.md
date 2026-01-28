@@ -101,7 +101,7 @@ A lógica foi ajustada para ocultar a mensagem de erro apenas quando o usuário 
 ```editInput.addEventListener("input", () => {
     editError.style.display = "none";
 });
-
+```
 ---
 
 ### 🎯 Resultado
