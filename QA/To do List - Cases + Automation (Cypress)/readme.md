@@ -4,6 +4,7 @@
 
 Este projeto tem como objetivo demonstrar minhas habilidades em **Qualidade de Software (QA)**, incluindo criação de casos de teste, automação com Cypress e identificação de bugs reais.
 
+![Demonstração do Teste](./video.gif)
 ---
 
 ## 📌 Visão Geral
@@ -61,6 +62,8 @@ Os casos de teste foram inicialmente definidos em planilha, contemplando:
 ```bash
 npm install
 npx cypress open
+
+---
 
 ## 🐞 Bug Identificado Durante a Automação
 
