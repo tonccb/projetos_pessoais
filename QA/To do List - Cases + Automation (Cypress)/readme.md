@@ -64,20 +64,77 @@ npx cypress open
 
 ## 🐞 Bug Identificado Durante a Automação
 
-Durante a automação do CT-05 – Edição de uma tarefa com input vazio, foi identificado um problema de UX.
+Durante a automação do **CT-05 – Edição de uma tarefa com input vazio**, foi identificado um comportamento inconsistente na aplicação.
+
+---
 
 ### ❌ Problema
 
-A mensagem de erro era exibida e ocultada imediatamente após o submit do formulário.
+Ao submeter o formulário de edição com o campo de título vazio:
 
-### 🔍 Causa
+- A mensagem de erro era exibida corretamente
+- Porém era ocultada imediatamente após o submit
+- O comportamento só era percebido durante a execução automatizada em modo **headless (`cypress run`)**
 
-Um eventListener no evento focus ocultava o erro logo após o submit.
+---
 
-### ✅ Solução
+### 🔍 Causa Raiz
 
-A lógica foi ajustada para ocultar o erro apenas quando o usuário começa a digitar, utilizando o evento input.
+Foi identificado que um `eventListener` associado ao evento `focus` do campo de edição ocultava a mensagem de erro logo após o envio do formulário:
 
-editInput.addEventListener("input", () => {
+```js
+editInput.addEventListener("focus", () => {
     editError.style.display = "none";
 });
+
+---
+
+### ✅ Solução Aplicada
+
+A lógica foi ajustada para ocultar a mensagem de erro apenas quando o usuário começa a digitar, utilizando o evento input:
+
+```editInput.addEventListener("input", () => {
+    editError.style.display = "none";
+});
+
+---
+
+### 🎯 Resultado
+
+Após a correção aplicada, o comportamento da aplicação passou a ser consistente tanto para o usuário final quanto para os testes automatizados:
+
+- Mensagem de erro exibida corretamente ao tentar salvar uma tarefa com título vazio
+- Mensagem de erro mantida visível até que o usuário inicie a digitação
+- Fluxo de edição funcionando conforme esperado
+- Teste automatizado do **CT-05** executando com sucesso em:
+  - Modo interativo (`cypress open`)
+  - Modo headless (`cypress run`)
+
+---
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram consolidados os seguintes aprendizados:
+
+- Validação de **estados visuais reais** em testes automatizados
+- Importância da sincronização correta ao testar aplicações com DOM dinâmico
+- Diferenças práticas entre execução interativa e headless no Cypress
+- Identificação de flakiness causada por eventos de foco e renderização
+- Atuação do QA como agente de melhoria de produto, além da validação funcional
+
+---
+
+## 📌 Considerações Finais
+
+Este projeto representa meu primeiro trabalho estruturado unindo **testes manuais e automação com Cypress**, com foco em qualidade, estabilidade e melhoria contínua da aplicação.
+
+Ele também evidencia a importância dos testes automatizados na detecção de comportamentos que podem passar despercebidos durante testes manuais.
+
+---
+
+## 👤 Autor
+
+**Everton Bueno**  
+QA | Automação de Testes | Front-End  
+📍 Joinville – SC
+
