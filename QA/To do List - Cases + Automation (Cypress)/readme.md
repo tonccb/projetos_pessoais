@@ -62,6 +62,7 @@ Os casos de teste foram inicialmente definidos em planilha, contemplando:
 ```bash
 npm install
 npx cypress open
+```
 
 ---
 
