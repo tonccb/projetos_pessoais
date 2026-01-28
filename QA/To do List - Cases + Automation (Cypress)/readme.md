@@ -90,6 +90,7 @@ Foi identificado que um `eventListener` associado ao evento `focus` do campo de 
 editInput.addEventListener("focus", () => {
     editError.style.display = "none";
 });
+```
 
 ---
 
