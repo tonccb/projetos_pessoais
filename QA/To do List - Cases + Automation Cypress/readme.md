@@ -27,23 +27,6 @@ Este projeto tem como objetivo demonstrar minhas habilidades em **Qualidade de S
 
 ---
 
-## 📂 Estrutura do Projeto
-
-QA/
- └── To-do List - Cases + Automation Cypress/
-     ├── assets/
-     │   ├── demo.gif
-     │   
-     ├── casos_de_teste.xlsx
-     ├── cypress/
-     │   └── e2e/
-     │       └── to-do.cy.js
-     ├── cypress.config.js
-     ├── package.json
-     └── README.md
-
----
-
 ## 📋 Casos de Teste
 
 Os casos de teste foram inicialmente definidos em planilha, contemplando:
