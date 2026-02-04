@@ -2,7 +2,7 @@
 
 Olá! 👋  
 
-Sou **Everton**, profissional em transição para a área de **Quality Assurance (QA)**, com foco em **testes manuais** e **automação de testes E2E**, aplicados a aplicações web reais.
+Sou **Everton Bueno**, profissional em transição para a área de **Quality Assurance (QA)**, com foco em **testes manuais** e **automação de testes E2E**, aplicados a aplicações web reais.
 
 Este repositório reúne meus **projetos práticos de QA**, desenvolvidos com o objetivo de demonstrar **raciocínio analítico**, **visão de qualidade** e **automação**, indo além de exemplos teóricos.
 
@@ -10,7 +10,7 @@ Este repositório reúne meus **projetos práticos de QA**, desenvolvidos com o 
 
 ## 👨‍💻 Sobre mim
 
-Minha trajetória profissional começou fora da área de TI, atuando por anos em **Controle e Gestão da Qualidade**, o que me proporcionou uma base sólida em:
+Minha trajetória profissional começou fora da área de TI, atuando por anos em **Controle e Gestão da Qualidade na industria Metal-mecânica**, o que me proporcionou uma base sólida em:
 
 - Análise de processos  
 - Identificação de falhas e causas raiz  
@@ -24,8 +24,8 @@ Atualmente, estou em **transição estruturada para a área de QA**, unindo **fo
 
 ## 🎓 Formação e estudos
 
-- **Análise e Desenvolvimento de Sistemas (ADS)** — *em andamento*  
-- **Formação Front-End** (HTML, CSS e JavaScript), com foco em lógica, estrutura de aplicações web e entendimento do código testado  
+- **Superior em Análise e Desenvolvimento de Sistemas (ADS)** — *em andamento*  
+- **Formação Front-End** (HTML, JavaScript e CSS), com foco em lógica, estrutura de aplicações web e entendimento do código testado  
 - **Quality Assurance pela USP (Coursera)** — *concluído*, com foco em fundamentos de testes, qualidade de software e boas práticas  
 - **Teste de Software Manual: Do Planejamento à Execução (Udemy)** — *em andamento*, com foco em:
   - Planejamento de testes  
@@ -34,7 +34,6 @@ Atualmente, estou em **transição estruturada para a área de QA**, unindo **fo
   - Análise de resultados e evidências  
 
 Essa combinação de formação acadêmica, cursos práticos e projetos reais me permite atuar em QA com uma visão completa, entendendo tanto o **comportamento do usuário** quanto o **funcionamento interno da aplicação**.
-
 
 ---
 
@@ -115,7 +114,7 @@ Os próximos projetos terão foco em:
 
 ## 📫 Contato
 
-- **LinkedIn:** https://www.linkedin.com/in/seu-link  
+- **LinkedIn:** https://www.linkedin.com/in/seu-link  ](https://www.linkedin.com/in/everton-bueno-14215b106/
 - **GitHub:** https://github.com/tonccb  
 
 Feedbacks são muito bem-vindos 🙌 
