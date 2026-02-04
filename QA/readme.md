@@ -114,7 +114,7 @@ Os próximos projetos terão foco em:
 
 ## 📫 Contato
 
-- **LinkedIn:** https://www.linkedin.com/in/seu-link  ](https://www.linkedin.com/in/everton-bueno-14215b106/
+- **LinkedIn:** https://www.linkedin.com/in/everton-bueno-14215b106/
 - **GitHub:** https://github.com/tonccb  
 
 Feedbacks são muito bem-vindos 🙌 
