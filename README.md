@@ -1,6 +1,6 @@
-# 🧪 QA Portfolio – Everton Bueno
+# 🧪Portfolio – Everton Bueno
 
-Bem-vindo ao meu repositório de projetos voltados para **Qualidade de Software (QA)**.
+Bem-vindo ao meu repositório de projetos voltados para **Qualidade de Software (QA) e Desenvolvimento Front-End**.
 
 Este espaço concentra estudos práticos, simulações reais de testes e materiais desenvolvidos durante minha formação em Teste de Software e atuação em plataformas de crowdtesting.
 
